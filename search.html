@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Products</h1>
+        <select id="searchType" onchange="handleSearchTypeChange()">
+            <option value="">Select one...</option>
+            <option value="category">Search by category</option>
+            <option value="all">View all</option>
+        </select>
+        <select id="categoryDropdown" style="display:none;" onchange="searchByCategory()"></select>
+        <div id="productsList"></div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
